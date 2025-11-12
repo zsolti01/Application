@@ -60,7 +60,7 @@ namespace Application
             }
             else
             {
-                MessageBox.Show("Eltérő jelszavak!");
+                MessageBox.Show("Password don't match!");
             }
         }
     }
