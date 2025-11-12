@@ -11,29 +11,21 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Application
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for AppList.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AppList : Window
     {
         private readonly DatabaseStatements _databaseStatements = new DatabaseStatements();
         private readonly MainWindow _mainWindow;
 
-        public MainWindow()
+        public AppList()
         {
             InitializeComponent();
-        }
-
-        private void list(object sender, RoutedEventArgs e)
-        {
-            AppList appList = new AppList();
-            appList.Show();
-            this.Close();
         }
 
         private void exit(object sender, RoutedEventArgs e)
@@ -42,11 +34,16 @@ namespace Application
             this.Close();
         }
 
-        private void add(object sender, RoutedEventArgs e)
+        private void back(object sender, RoutedEventArgs e)
         {
-            AddVersion version = new AddVersion();
-            version.Show();
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
             this.Close();
+        }
+
+        private void list(object sender, RoutedEventArgs e)
+        {
+            Versions.ItemsSource = _databaseStatements.VersionList();
         }
     }
 }

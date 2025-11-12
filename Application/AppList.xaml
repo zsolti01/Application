@@ -1,0 +1,17 @@
+﻿<Window x:Class="Application.AppList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Application"
+        mc:Ignorable="d"
+        Title="AppList" Height="450" Width="800">
+    <Grid Background="#FFC2EAFF">
+        <DataGrid x:Name="Versions" Margin="10,69,159,10"/>
+        <Label Content="Application version history" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Height="59" Width="449" FontSize="36" FontFamily="Tahoma"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="669,357,0,0" VerticalAlignment="Top" Height="67" Width="121" FontSize="36" BorderBrush="Black" Background="#FFCC0000" FontWeight="Bold" Foreground="Black" Click="exit"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="669,285,0,0" VerticalAlignment="Top" Height="67" Width="121" FontSize="36" BorderBrush="Black" Background="#FF1A5CFF" FontWeight="Bold" Foreground="White" Click="back"/>
+        <Button Content="List" HorizontalAlignment="Left" Margin="669,213,0,0" VerticalAlignment="Top" Height="67" Width="121" FontSize="36" BorderBrush="Black" Background="#FF1A5CFF" FontWeight="Bold" Foreground="White" Click="list"/>
+
+    </Grid>
+</Window>

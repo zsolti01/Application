@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Application"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Application" Height="450" Width="800">
+    <Grid Background="#FFC2EAFF">
+        <Label Content="Application version history" HorizontalAlignment="Left" Margin="22,43,0,0" VerticalAlignment="Top" Height="56" Width="436" FontSize="36" FontFamily="Tahoma"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="669,357,0,0" VerticalAlignment="Top" Height="67" Width="121" FontSize="36" BorderBrush="Black" Background="#FFCC0000" FontWeight="Bold" Foreground="Black" Click="exit"/>
+        <Button Content="List" HorizontalAlignment="Left" Margin="22,104,0,0" VerticalAlignment="Top" Height="67" Width="121" FontSize="36" BorderBrush="Black" Background="#FF1A5CFF" FontWeight="Bold" Foreground="White" Click="list"/>
+        <Label Content="Add Version" HorizontalAlignment="Left" Margin="22,217,0,0" VerticalAlignment="Top" Height="49" Width="197" FontSize="36" FontFamily="Tahoma"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="22,271,0,0" VerticalAlignment="Top" Height="67" Width="121" FontSize="36" BorderBrush="Black" Background="#FF1A5CFF" FontWeight="Bold" Foreground="White" Click="add"/>
+
     </Grid>
 </Window>
